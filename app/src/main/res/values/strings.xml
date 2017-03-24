@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Congress</string>
+    <string name="legislators_name">Legislators</string>
+    <string name="bills_name">Bills</string>
+    <string name="committees_name">Commmittees</string>
+    <string name="favorites_name">Favorites</string>
+    <string name="about_me_name">About me</string>
+
+
+    <string name="tab1">About me</string>
+    <string name="tab2">aaa</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+</resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.Legislators"
+    android:background="@color/background_floating_material_light">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/deep_gray"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:paddingTop="18px"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".Activity.Legislators"
+        tools:showIn="@layout/all_content">
+
+        <TabHost
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/tabHost"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="31px"
+                    android:paddingTop="10dp"></TabWidget>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:background="@color/button_material_light">
+
+
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ListView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/first_list" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/inner_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ListView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/second_list" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ListView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/third_list" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:id="@+id/fast_position"
+                        android:layout_width="70dip"
+                        android:layout_height="70dip"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal|top"
+                        android:layout_margin="34dip"
+                        android:background="@color/deep_gray"
+                        android:gravity="center"
+                        android:padding="2dip"
+                        android:textColor="#404040"
+                        android:textSize="48dip"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </TabHost>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
